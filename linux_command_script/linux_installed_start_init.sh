@@ -14,7 +14,7 @@ echo -e "Informations:
 hostnamectl status
 # 二、rsa免密快速登陆
 echo " "
-echo -e "rsa/Login host without password: (Windows cmd command!)"
+echo -e "rsa/Login host without password:  Windows cmd command! "
 echo -e "1、Add text directly: \n type \$env:USERPROFILE\\.ssh\\id_rsa.pub | ssh root@${HOST_IP} \"cat >> .ssh/authorized_keys\""
 echo -e "2、Need create authorized_keys file: \n type \$env:USERPROFILE\\.ssh\\id_rsa.pub | ssh root@${HOST_IP} \"mkdir .ssh;touch .ssh/authorized_keys;cat >> .ssh/authorized_keys\""
 echo -e "${GRE}${NC}"
