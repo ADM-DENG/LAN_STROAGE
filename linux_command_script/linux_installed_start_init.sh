@@ -9,15 +9,17 @@ HOST_IP=$(hostname -I | awk '{print $1}')
 # 一、系统详情
 echo -e "${RED}-------------------------${NC}"
 echo -e "${GRE}System Initialization Verification——openEuler! For learning environments${NC}"
+
 echo -e "System/Host ip: ${HOST_IP}"
 echo -e "Informations:
-hostnamectl status
+echo -e "hostnamectl status
+
 # 二、rsa免密快速登陆
-echo " "
-echo -e "rsa/Login host without password:  Windows cmd command! "
+echo -e " "
+echo -e "rsa/Login host without password: ( Windows cmd command!)"
 echo -e "1、Add text directly: \n type \$env:USERPROFILE\\.ssh\\id_rsa.pub | ssh root@${HOST_IP} \"cat >> .ssh/authorized_keys\""
 echo -e "2、Need create authorized_keys file: \n type \$env:USERPROFILE\\.ssh\\id_rsa.pub | ssh root@${HOST_IP} \"mkdir .ssh;touch .ssh/authorized_keys;cat >> .ssh/authorized_keys\""
-echo -e "${GRE}${NC}"
+echo -e "${GRE}${NC}"   
 echo -e "${GRE}-------------------------${NC}"
 # 三、选择操作类型
 echo "1、Modify HostName/修改主机名"
