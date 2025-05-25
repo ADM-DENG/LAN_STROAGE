@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Alist Server
+Comment=启动 Alist 服务
+Exec=/opt/alist/alist_server.sh
+Icon=/opt/alist/logo/logo.png
+Terminal=false
+Type=Application
+Categories=Utility;
